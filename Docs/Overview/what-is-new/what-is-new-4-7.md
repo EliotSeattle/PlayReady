@@ -29,16 +29,17 @@ Starting with PlayReady 4.7, dual-signed (counter-signed) certificates are now s
 
 ### Server API Changes
 
-This is merely an overview. Refer to the [Server API documentation](/dotnet/api/Microsoft.Media.Drm) for more information.
+This is merely an overview. For more information, see [Server API documentation](/dotnet/api/Microsoft.Media.Drm).
 
 The following APIs were added:
-*  public byte[] Microsoft.Media.Drm.Certificate.CertificateChain
-*  public bool Microsoft.Media.Drm.LicenseResponse.ForceSignature
 
+* public byte[] Microsoft.Media.Drm.Certificate.CertificateChain
+* public bool Microsoft.Media.Drm.LicenseResponse.ForceSignature
 
 ## Changes in PlayReady Device Porting Kit Version 4.7
 
 ### General Device Porting Kit changes
+
 * Counter-signature validation was added to the PK.
 * Resolved an issue with PlayReady Device Credentials Renewal after rolling to a new CTK (Current TEE Key).
 * PK certificates were updated to include counter-signed extensions as required for this release.
